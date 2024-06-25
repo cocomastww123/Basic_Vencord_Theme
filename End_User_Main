@@ -1,0 +1,39 @@
+/* Variables */
+@import url("https://raw.githubusercontent.com/cocomastww123/Basic_Vencord_Theme/main/Main.css?token=GHSAT0AAAAAACT4HPALSZY4XAI6WKNLRXVYZTUN4YQ");
+
+:root
+{
+    --Google_Sans: "Google Sans";
+    --background_image: url(
+        "https://cdn.discordapp.com/attachments/1219691196868202597/1254845363882299576/Sheeps.gif?ex=667af950&is=6679a7d0&hm=a30f74568dd9d7458423dbd0997539171bedeca2afb50006cf71388ce4682682&"
+    ); /* Paste Image URL here (Line 8 / The line above this) within a "" */
+
+    --anim_speed: 0.5s;
+    --anim_ease: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    --ui_rounding: 10px;
+
+    --blur_size: blur(2.5px);
+    --hover_blur: blur(5px)
+}
+
+/* Fonts */
+div>*:not(code) 
+{
+    font-family: "Times New Roman", var(--Google_Sans), "Yu Mincho" !important;
+}
+
+/* Themes / Colors */
+.theme-dark 
+{
+    --discord_primary_color: rgb(49, 51, 56);
+    --message_bg_color: rgba(5, 5, 5, 0.25);
+    --message_bg_hover_color: rgba(49, 51, 56, 0.5);
+}
+
+.theme-light 
+{
+    --discord_primary_color: rgb(255, 255, 255);
+    --message_bg_color: rgba(255, 255, 255, 0.25);
+    --message_bg_hover_color: rgba(255, 255, 255, 0.5);
+}
