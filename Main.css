@@ -199,6 +199,15 @@ peopleListItem_d51464:hover       /* People List (Friend Menu; Transition) */
     border: 1px solid var(--message_bg_color) !important;
 }
 
+.navButton_af5dbb:not(hover) /* Gif + Sticker + Emoji Header */
+{
+    border-radius: var(--ui_rounding) !important;
+    backdrop-filter: blur(0) !important;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0) !important;
+    bottom: 5px;
+}
+
 .backdrop_e4f2ae.withLayer_e4f2ae /* Voice Message send        */
 {
     backdrop-filter: var(--blur_size) !important;
