@@ -5,11 +5,16 @@
 {
     --Google_Sans: "Google Sans";
     --background_image: url(
-            "https://cdn.discordapp.com/attachments/1040043448067174502/1252935627138404372/Purple_Night_Sky.gif?ex=667406bb&is=6672b53b&hm=698479548aa346c3c0ce421f699d6bdba39e016ce9595b6f776d2de2083202e0&"
+        https://cdn.discordapp.com/attachments/1219691196868202597/1254845363882299576/Sheeps.gif?ex=667af950&is=6679a7d0&hm=a30f74568dd9d7458423dbd0997539171bedeca2afb50006cf71388ce4682682&
     ); /* Paste Image URL here (Line 8 / The line above this) within a "" */
 
     --anim_speed: 0.5s;
     --anim_ease: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    --ui_rounding: 10px;
+
+    --blur_size: blur(2.5px);
+    --hover_blur: blur(5px)
 }
 
 /* Themes */
@@ -25,6 +30,13 @@
     --discord_primary_color: rgb(255, 255, 255);
     --message_bg_color: rgba(255, 255, 255, 0.25);
     --message_bg_hover_color: rgba(255, 255, 255, 0.5);
+}
+
+/* Forces some ui to use rounding lol */
+:root
+{
+    --radius-xs: var(--ui_rounding);
+    --radius-sm: var(--ui_rounding);
 }
 
 .peopleList_e0840f,               /* People Background   */
@@ -55,7 +67,7 @@ div>*:not(code)
     right: -10px;
     position: relative;
     width: calc(100% - 20px);
-    backdrop-filter: blur(3px);
+    backdrop-filter: var(--blur_size);
     
     background-color: var(--message_bg_color);
 }
@@ -67,37 +79,59 @@ div>*:not(code)
     display: none !important;
 }
 
-.header_b56bbc,                                          /* Gif Search Bar        */
-.wrapper_cdfd51,                                         /* Loading Background    */
-.wrapper_b211c6,                                         /* Loading Background    */
-.replyBar_b11c5e,                                        /* Reply Background      */
-.channelTextArea_a7d72e,                                 /* Reply Background      */
-.messageGroupWrapper_ac90a2,                             /* Pin Messages Message  */
-.theme-dark .message_d5deea.selected_d5deea,             /* Message Hover Overlay */
-.theme-dark.mouse-mode.full-motion .message_d5deea:hover /* Message Hover Overlay */
+.footer_f9a4c9,                                          /* Send Message Background */
+.header_b56bbc,                                          /* Gif Search Bar          */
+.wrapper_cdfd51,                                         /* Loading Background      */
+.wrapper_b211c6,                                         /* Loading Background      */
+.replyBar_b11c5e,                                        /* Reply Background        */
+.channelTextArea_a7d72e,                                 /* Reply Background        */
+.spoilerContainer_a3d0f7,                                /* Upload image background */
+.messageGroupWrapper_ac90a2,                             /* Pin Messages Message    */
+.theme-dark .message_d5deea.selected_d5deea,             /* Message Hover Overlay   */
+.theme-dark.mouse-mode.full-motion .message_d5deea:hover /* Message Hover Overlay   */
 {
     background: none !important;
 }
 
-.gif_bad108,                /* Gif Rounding                  */
-.root_f9a4c9,               /* Media UI Rounding             */
-.embed_ad0b71,              /* Embed (Like youtube) Rounding */
-.upload_df1eaf,             /* Upload UI Rounding            */
-.pngImage_cb3343,           /* Sticker Rounding              */
-.container_c18ec9,          /* GIF Search Bar                */
-.container_b15955,          /* Person List Hover Rounding    */
-.embedMedia_ad0b71,         /* Media UI Rounding             */
-.categoryFade_af1167,       /* GIF Background                */ 
-.hasConnectedBar_d0696b,    /* Add UI rounding when replying */
-.modalTextContainer_ad9cbd, /* Code UI Rounding              */
-.categoryFadeBlurple_af1167 /* GIF Background                */
+.hljs,                                   /* Code Preview Ui Roundin       */
+.gif_bad108,                             /* Gif Rounding                  */
+.base_f23da8,                            /* @ Hover Rounding              */
+.root_f9a4c9,                            /* Media UI Rounding             */
+.media_f847a3,                           /* Embed Image Upload            */
+.image_aee8c6,                           /* Image Preview                 */
+.embed_ad0b71,                           /* Embed (Like youtube) Rounding */
+.upload_df1eaf,                          /* Upload UI Rounding            */
+.result_bad108,                          /* GIF Loading Background        */
+.layout_e9f61e,                          /* Hovering over a member        */
+.pngImage_cb3343,                        /* Sticker Rounding              */
+.container_c18ec9,                       /* GIF Search Bar                */
+.container_effbe2,                       /* Sticker Search Bar            */
+.side_a0 .item_a0,                       /* Settings Button Rounding      */
+.container_b15955,                       /* Person List Hover Rounding    */
+.embedMedia_ad0b71,                      /* Media UI Rounding             */
+.categoryFade_af1167,                    /* GIF Background                */
+.result_bad108:after,                    /* GIF Hover Boarder Rounding    */
+.hasConnectedBar_d0696b,                 /* Add UI rounding when replying */
+.modalTextContainer_ad9cbd,              /* Code UI Rounding              */
+.categoryFadeBlurple_af1167,             /* GIF Background                */
+.attachment_a4623d.newMosaicStyle_a4623d /* Attachment UI Rounding        */
 {
-    border-radius: 10px !important;
+    border-radius: var(--ui_rounding) !important;
+}
+
+.footer_ad9cbd
+{
+    border-radius: 0 0 var(--ui_rounding) var(--ui_rounding) !important;
 }
 
 .scrollableContainer_d0696b /* Typing Bar Rounding (Circle Round) */
 {
-    border-radius: 9999px !important;
+    border-radius: 1.45rem !important;
+}
+
+.attachButton_d0696b /* Centering Attachemnt Button */
+{
+    margin-left: -20px !important;
 }
 
 .altText_cf58b5 /* Removing werid extra gif text space? */
@@ -145,10 +179,12 @@ peopleListItem_d51464:hover       /* People List (Friend Menu; Transition) */
     width: calc(100% - 8px);
 }
 
+.root_f9a4c9,                                       /* Send Message Background   */
 .menu_d90b3d,                                       /* Right Click Menu          */
 .header_a3bc57,                                     /* Emoji Menu Header         */
 .wrapper_ef319f,                                    /* Message Right Menu        */
 .packHeader_de4721,                                 /* Sticker Menu Header       */
+.autocomplete_bea0d0,                               /* @ Autocomplete bar        */
 .contentWrapper_af5dbb,                             /* Gif Menu                  */
 .peopleListItem_d51464,                             /* People List (Friend Menu) */
 .messagesPopoutWrap_ac90a2,                         /* Pinned Messges Background */
@@ -156,10 +192,16 @@ peopleListItem_d51464:hover       /* People List (Friend Menu; Transition) */
 .emojiItem_fbfedd.emojiItemSelected_fbfedd,         /* Emoji Section Overlay     */
 .stickerInspected_a708c4 .inspectedIndicator_a708c4 /* Sticker Section Overlay   */
 {
-    border-radius: 10px;
-    backdrop-filter: blur(3px);
-    background-color: var(--message_bg_color);
-    border: 1px solid var(--message_bg_color);
+    border-radius: var(--ui_rounding) !important;
+    backdrop-filter: var(--blur_size) !important;
+    background-color: var(--message_bg_color) !important;
+    border: 1px solid var(--message_bg_color) !important;
+}
+
+.backdrop_e4f2ae.withLayer_e4f2ae /* Voice Message send        */
+{
+    backdrop-filter: var(--blur_size) !important;
+    transition: backdrop-filter 0.05 var(--anim_ease);
 }
 
 .submenuPaddingContainer_d90b3d /* Right Click Menu, Emoji Menu */
@@ -169,10 +211,11 @@ peopleListItem_d51464:hover       /* People List (Friend Menu; Transition) */
     top: -12.5%;
 }
 
-.peopleList_e0840f,          /* People List Round Disabling */
-.contentColumnDefault_c25c6d /* Settings Backdrop           */
+.peopleList_e0840f,               /* People List Round Disabling */
+.contentColumnDefault_c25c6d,     /* Settings Backdrop           */
+.backdrop_e4f2ae.withLayer_e4f2ae /* Voice Message send          */
 {
-    border-radius: 0;
+    border-radius: 0 !important;
 }
 
 .contentRegionScroller_c25c6d .tools_c25c6d /* Settings Close Button */
@@ -205,9 +248,9 @@ peopleListItem_d51464:hover       /* People List (Friend Menu; Transition) */
 .cozy_ec86aa .contents_ec86aa:not(:hover) /* Normal Message    */
 { /* Not Hovering */
     padding: 5px;
-    border-radius: 10px;
+    border-radius: var(--ui_rounding);
     
-    backdrop-filter: blur(3px);
+    backdrop-filter: var(--blur_size);
     background-color: var(--message_bg_color);
 
     width: max-content;
@@ -222,9 +265,9 @@ peopleListItem_d51464:hover       /* People List (Friend Menu; Transition) */
 .cozy_ec86aa .contents_ec86aa:hover /* Normal Message    */
 { /* Hovering */
     padding: 5px;
-    border-radius: 10px;
+    border-radius: var(--ui_rounding);
 
-    backdrop-filter: blur(5px);
+    backdrop-filter: var(--hover_blur);
     background-color: var(--message_bg_hover_color);
 
     width: max-content;
