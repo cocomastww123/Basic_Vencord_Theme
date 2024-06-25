@@ -183,11 +183,11 @@ peopleListItem_d51464:hover       /* People List (Friend Menu; Transition) */
 .menu_d90b3d,                                       /* Right Click Menu             */
 .header_a3bc57,                                     /* Emoji Menu Header            */
 .wrapper_ef319f,                                    /* Message Right Menu           */
-.navButton_af5dbb,                                  /* Gif + Sticker + Emoji Header */
 .packHeader_de4721,                                 /* Sticker Menu Header          */
 .autocomplete_bea0d0,                               /* @ Autocomplete bar           */
 .contentWrapper_af5dbb,                             /* Gif Menu                     */
 .peopleListItem_d51464,                             /* People List (Friend Menu)    */
+.navButton_af5dbb:hover,                            /* Gif + Sticker + Emoji Header */
 .messagesPopoutWrap_ac90a2,                         /* Pinned Messges Background    */
 .contentColumnDefault_c25c6d,                       /* Settings Backdrop            */
 .emojiItem_fbfedd.emojiItemSelected_fbfedd,         /* Emoji Section Overlay        */
