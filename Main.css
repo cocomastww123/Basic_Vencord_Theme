@@ -119,9 +119,14 @@ div>*:not(code)
     border-radius: var(--ui_rounding) !important;
 }
 
-.footer_ad9cbd
+.footer_ad9cbd /* what is this? */
 {
     border-radius: 0 0 var(--ui_rounding) var(--ui_rounding) !important;
+}
+
+.markup_d6076c pre /* Fixing The code block whitespace */
+{
+    max-width: 100%;
 }
 
 .scrollableContainer_d0696b /* Typing Bar Rounding (Circle Round) */
@@ -153,7 +158,7 @@ div>*:not(code)
 .avatar_ec86aa /* Avatar */
 {
     top: 0;
-    left: -54px; /* Don't fuck with this, it offsets the avatar back to it's original position. */
+    left: -54px; /* Don't mess with this, it offsets the avatar back to it's original position. */
 }
 
 peopleListItem_d51464:hover       /* People List (Friend Menu; Transition) */
