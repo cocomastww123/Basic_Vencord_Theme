@@ -1,5 +1,5 @@
 /* Variables */
-@import url("https://raw.githubusercontent.com/cocomastww123/Basic_Vencord_Theme/main/Main.css?token=GHSAT0AAAAAACT4HPALBK5XZTDNTSPUIUWKZT26MWA");
+@import url("https://raw.githubusercontent.com/cocomastww123/Basic_Vencord_Theme/main/Main.css");
 
 :root
 {
@@ -20,7 +20,7 @@
 /* Fonts */
 div>*:not(code) 
 {
-    font-family: "Times New Roman", var(--Google_Sans), "Yu Mincho" !important;
+    font-family: var(--Google_Sans), "Yu Mincho" !important;
 }
 
 /* Themes / Colors */
