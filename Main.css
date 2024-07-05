@@ -15,6 +15,7 @@
 
     --blur_size: blur(2.5px);
     --hover_blur: blur(5px)
+    
 }
 
 /* Themes */
@@ -64,17 +65,18 @@ div>*:not(code)
 
 .attachedBars_d0696b /* Reply Bar */
 {
-    right: -10px;
+    right: -25px;
     position: relative;
-    width: calc(100% - 20px);
+    width: calc(100% - 50px);
     backdrop-filter: var(--blur_size);
     
     background-color: var(--message_bg_color);
 }
 
-.form_a7d72e:before,                /* Strange Bar near Chat bar?  */
-.wrapper_e06857:after,              /* Random Line in Sticker Menu */
-.scroller_e2e187::-webkit-scrollbar /* Scrollbar                   */
+.altText_cf58b5,                    /* Removing werid extra gif text space? */
+.form_a7d72e:before,                /* Strange Bar near Chat bar?           */
+.wrapper_e06857:after,              /* Random Line in Sticker Menu          */
+.scroller_e2e187::-webkit-scrollbar /* Scrollbar                            */
 {
     display: none !important;
 }
@@ -139,23 +141,19 @@ div>*:not(code)
     margin-left: -20px !important;
 }
 
-.altText_cf58b5 /* Removing werid extra gif text space? */
-{
-    margin: .25rem 0 .125rem;
-}
-
 .content_eed6a8 /* People Menu */
 {
     padding-right: 5px;
 }
-/* .channelTextArea_d0696b */
-.cozy_ec86aa .timestamp_ec86aa.alt_ec86aa /* Timestamp */
+
+.cozy_f9f2ca .timestamp_f9f2ca.alt_f9f2ca /* Timestamp */
 {
     position: fixed;
     left: -4rem;
 }
 
-.avatar_ec86aa /* Avatar */
+.avatar_f9f2ca,          /* Avatar      */
+.avatarDecoration_f9f2ca /* Decor thing */
 {
     top: 0;
     left: -54px; /* Don't mess with this, it offsets the avatar back to it's original position. */
@@ -184,6 +182,18 @@ peopleListItem_d51464:hover       /* People List (Friend Menu; Transition) */
     width: calc(100% - 8px);
 }
 
+.reactionBtn_ec6b19      /* Little reaction button thing */
+{
+    visibility: visible;
+    opacity: 0.7;
+}
+
+.reactionBtn_ec6b19:hover /* Little reaction button thing */
+{
+    visibility: visible;
+    opacity: 1;
+}
+
 .root_f9a4c9,                                       /* Send Message Background      */
 .menu_d90b3d,                                       /* Right Click Menu             */
 .header_a3bc57,                                     /* Emoji Menu Header            */
@@ -204,6 +214,11 @@ peopleListItem_d51464:hover       /* People List (Friend Menu; Transition) */
     border: 1px solid var(--message_bg_color) !important;
 }
 
+.menu_d90b3d                                        /* Right Click Menu             */
+{
+    backdrop-filter: none !important;
+}
+
 .navButton_af5dbb:not(hover) /* Gif + Sticker + Emoji Header */
 {
     border-radius: var(--ui_rounding) !important;
@@ -221,9 +236,9 @@ peopleListItem_d51464:hover       /* People List (Friend Menu; Transition) */
 
 .submenuPaddingContainer_d90b3d /* Right Click Menu, Emoji Menu */
 {
-    position: fixed;
-    right: 100%;
-    top: -12.5%;
+    position:initial;
+    /* right: 100%;
+    top: -12.5%; */
 }
 
 .peopleList_e0840f,               /* People List Round Disabling */
@@ -259,8 +274,8 @@ peopleListItem_d51464:hover       /* People List (Friend Menu; Transition) */
 
 .container_b558d0:not(:hover),            /* Media Attachments */
 .colorDefault_d90b3d:not(:hover),         /* Menu Options      */
-.repliedMessage_ec86aa:not(:hover),       /* Replied Message   */
-.cozy_ec86aa .contents_ec86aa:not(:hover) /* Normal Message    */
+.repliedMessage_f9f2ca:not(:hover),       /* Replied Message   */
+.cozy_f9f2ca .contents_f9f2ca:not(:hover) /* Normal Message    */
 { /* Not Hovering */
     padding: 5px;
     border-radius: var(--ui_rounding);
@@ -276,8 +291,8 @@ peopleListItem_d51464:hover       /* People List (Friend Menu; Transition) */
 
 .container_b558d0:hover,            /* Media Attachments */
 .colorDefault_d90b3d:hover,         /* Menu Options      */
-.repliedMessage_ec86aa:hover,       /* Replied Message   */
-.cozy_ec86aa .contents_ec86aa:hover /* Normal Message    */
+.repliedMessage_f9f2ca:hover,       /* Replied Message   */
+.cozy_f9f2ca .contents_f9f2ca:hover /* Normal Message    */
 { /* Hovering */
     padding: 5px;
     border-radius: var(--ui_rounding);
