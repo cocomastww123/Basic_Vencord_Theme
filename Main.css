@@ -5,7 +5,7 @@
 {
     --Google_Sans: "Google Sans";
     --background_image: url(
-        https://cdn.discordapp.com/attachments/1219691196868202597/1254845363882299576/Sheeps.gif?ex=667af950&is=6679a7d0&hm=a30f74568dd9d7458423dbd0997539171bedeca2afb50006cf71388ce4682682&
+        "https://cdn.discordapp.com/attachments/1260597948283093023/1262222338930249738/Purple_Night_Sky.gif?ex=6695cfa8&is=66947e28&hm=490f2d86f7cc201cf6742f6a76d4a81eb306500534a825e52e672ced69679fae&"
     ); /* Paste Image URL here (Line 8 / The line above this) within a "" */
 
     --anim_speed: 0.5s;
@@ -84,8 +84,9 @@ div>*:not(code)
 .footer_f9a4c9,                                          /* Send Message Background */
 .header_b56bbc,                                          /* Gif Search Bar          */
 .wrapper_cdfd51,                                         /* Loading Background      */
-.wrapper_b211c6,                                         /* Loading Background      */
+.wrapper_b75bb9,                                         /* Loading Background      */
 .replyBar_b11c5e,                                        /* Reply Background        */
+.container_b56bbc,                                       /* Gif Background          */
 .channelTextArea_a7d72e,                                 /* Reply Background        */
 .spoilerContainer_a3d0f7,                                /* Upload image background */
 .messageGroupWrapper_ac90a2,                             /* Pin Messages Message    */
