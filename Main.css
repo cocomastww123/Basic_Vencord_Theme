@@ -5,7 +5,7 @@
 {
     --Google_Sans: "Google Sans";
     --background_image: url(
-        "https://cdn.discordapp.com/attachments/1260597948283093023/1262222338930249738/Purple_Night_Sky.gif?ex=6695cfa8&is=66947e28&hm=490f2d86f7cc201cf6742f6a76d4a81eb306500534a825e52e672ced69679fae&"
+        "https://cdn.discordapp.com/attachments/1016823371738136606/1269465938609307649/Night_Sky.gif?ex=66b029c9&is=66aed849&hm=f265203674576de85528ab5fbde2aab41f31974c836efc74a4d359568cb5b128&"
     ); /* Paste Image URL here (Line 8 / The line above this) within a "" */
 
     --anim_speed: 0.5s;
@@ -55,7 +55,7 @@
 
 ::selection
 {
-    background-color: var(--message_bg_color);
+    background-color: var(--discord_primary_color);
 }
 
 div>*:not(code) 
@@ -127,7 +127,7 @@ div>*:not(code)
     border-radius: 0 0 var(--ui_rounding) var(--ui_rounding) !important;
 }
 
-.markup_d6076c pre /* Fixing The code block whitespace */
+.markup_f8f345 pre /* Fixing The code block whitespace */
 {
     max-width: 100%;
 }
