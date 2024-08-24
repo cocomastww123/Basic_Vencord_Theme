@@ -5,7 +5,7 @@
 {
     --Google_Sans: "Google Sans";
     --background_image: url(
-        "https://cdn.discordapp.com/attachments/1016823371738136606/1269465938609307649/Night_Sky.gif?ex=66b029c9&is=66aed849&hm=f265203674576de85528ab5fbde2aab41f31974c836efc74a4d359568cb5b128&"
+        "https://cdn.discordapp.com/attachments/1260597948283093023/1276763752271970326/Purple_Night_Sky.gif?ex=66cab667&is=66c964e7&hm=8da3eb77fd93038020521a6a15646f2d649964529f46110b955cf750876d4172&"
     ); /* Paste Image URL here (Line 8 / The line above this) within a "" */
 
     --anim_speed: 0.5s;
@@ -50,7 +50,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: top;
+    background-position-y: bottom;
 }
 
 ::selection
@@ -76,6 +76,7 @@ div>*:not(code)
 .altText_cf58b5,                    /* Removing werid extra gif text space? */
 .form_a7d72e:before,                /* Strange Bar near Chat bar?           */
 .wrapper_e06857:after,              /* Random Line in Sticker Menu          */
+.channelAppLauncher_df39bd,         /* Shitty Commands thing                */
 .scroller_e2e187::-webkit-scrollbar /* Scrollbar                            */
 {
     display: none !important;
@@ -120,6 +121,11 @@ div>*:not(code)
 .attachment_a4623d.newMosaicStyle_a4623d /* Attachment UI Rounding        */
 {
     border-radius: var(--ui_rounding) !important;
+}
+
+.button_f7e168.selected_f7e168
+{
+    border-radius: var(--ui_rounding);
 }
 
 .footer_ad9cbd /* what is this? */
@@ -198,7 +204,7 @@ peopleListItem_d51464:hover       /* People List (Friend Menu; Transition) */
 .root_f9a4c9,                                       /* Send Message Background      */
 .menu_d90b3d,                                       /* Right Click Menu             */
 .header_a3bc57,                                     /* Emoji Menu Header            */
-.wrapper_ef319f,                                    /* Message Right Menu           */
+.wrapper_f7e168,                                    /* Message Right Menu           */
 .packHeader_de4721,                                 /* Sticker Menu Header          */
 .autocomplete_bea0d0,                               /* @ Autocomplete bar           */
 .contentWrapper_af5dbb,                             /* Gif Menu                     */
