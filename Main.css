@@ -5,7 +5,7 @@
 {
     --Google_Sans: "Google Sans";
     --background_image: url(
-        "https://cdn.discordapp.com/attachments/1260597948283093023/1276763752271970326/Purple_Night_Sky.gif?ex=66cab667&is=66c964e7&hm=8da3eb77fd93038020521a6a15646f2d649964529f46110b955cf750876d4172&"
+        "https://cdn.discordapp.com/attachments/1260597948283093023/1292615690141958144/Boss_Room.gif?ex=670461ac&is=6703102c&hm=2289bc2a07c8fa7c45aacdca4130c4ebd29aa18ebde4eb9c016f5206edab78ac&"
     ); /* Paste Image URL here (Line 8 / The line above this) within a "" */
 
     --anim_speed: 0.5s;
@@ -111,7 +111,7 @@ div>*:not(code)
 .container_c18ec9,                       /* GIF Search Bar                */
 .container_effbe2,                       /* Sticker Search Bar            */
 .side_a0 .item_a0,                       /* Settings Button Rounding      */
-.container_b15955,                       /* Person List Hover Rounding    */
+.container_d91ad9,                       /* Person List Hover Rounding    */
 .embedMedia_ad0b71,                      /* Media UI Rounding             */
 .categoryFade_af1167,                    /* GIF Background                */
 .result_bad108:after,                    /* GIF Hover Boarder Rounding    */
